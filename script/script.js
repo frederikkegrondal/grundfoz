@@ -8,4 +8,9 @@ function nextTwo() {
   document.getElementById('step-three').classList.add('hor')
 }
 
+
+function previousTwo() {
+  document.getElementById('step-two').classList.add("horizzz");
+}
+
 function submitThree() {}
