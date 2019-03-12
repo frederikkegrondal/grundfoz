@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<div class="wrapper">
+
+  <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Account Setup</li>
+      <li>Improve Experience</li>
+      <li>Final Details</li>
+    </ul>
+
+<!-- fieldsets -->
+  <fieldset id="step-one">
+    <h2 class="fs-title">Create your account</h2>
+    <h3 class="fs-subtitle">This is step 1</h3>
+    <input type="text" name="name" placeholder="Full Name" />
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="pass" placeholder="Password" />
+    <input type="button" name="next" onclick="nextOne()" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset id="step-two">
+    <h2 class="fs-title">Improve experience</h2>
+    <h3 class="fs-subtitle">Your presence on the social network</h3>
+    <input type="text" name="areas of interest" placeholder="Areas of Interest" />
+    <input type="text" name="job role" placeholder="Job Role" />
+    <input type="button" name="previous" onclick="previousTwo()" class="previous action-button" value="Previous" />
+    <input type="button" name="next" onclick="nextTwo()" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset id="step-three">
+    <h2 class="fs-title">Final Details</h2>
+    <h3 class="fs-subtitle">We will never sell it</h3>
+    <input type="text" name="fname" placeholder="First Name" />
+    <input type="text" name="lname" placeholder="Last Name" />
+    <input type="text" name="phone" placeholder="Phone" />
+    <textarea name="address" placeholder="Address"></textarea>
+    <input type="button" name="previous" onclick="previousThree()" class="previous action-button" value="Previous" />
+    <input type="submit" name="submit" onclick="submitThree()" class="submit action-button" value="Create Account" />
+  </fieldset>
+
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="script/script.js"></script>
+
+</html>
