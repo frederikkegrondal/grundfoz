@@ -106,6 +106,21 @@ input .next {
 	cursor: pointer;
 }
 
+/* Create a custom checkbox */
+.checkmark {
+  top: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+ display: flex;
+}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+}
+
+
 /*headings*/
 .fs-title {
 	font-size: 15px;
@@ -126,13 +141,14 @@ input .next {
 	overflow: hidden;
 	/*CSS counters to number the steps*/
 	counter-reset: step;
+	margin-left: 27%;
 }
 #progressbar li {
 	list-style-type: none;
 	color: darkblue;
 	text-transform: uppercase;
 	font-size: 12px;
-	width: 33.33%;
+	width: 30%;
 	float: left;
 	position: relative;
 }
@@ -144,7 +160,7 @@ input .next {
 	display: block;
 	font-size: 20px;
 	color: #333;
-	background: #ebebeb;
+	background: lightgrey;
 	border-radius: 3px;
 	padding:3px;
 	margin: 0 auto 5px auto;
@@ -154,7 +170,7 @@ input .next {
 	content: '';
 	width: 100%;
 	height: 2px;
-	background: #ebebeb;
+	background: lightgrey;
 	position: absolute;
 	left: -50%;
 	top: 9px;
