@@ -4,6 +4,25 @@ var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 
+
+$(document).ready(function() {
+    $('button[type="button"]').attr('disabled', true);
+    $('input[type="text"],textarea').on('keyup', function () {
+        var textarea_value = $("#texta").val();
+        var text_value = $('input[name="textField"]').val();
+				var text_name = $('input[name="firstname"]').val();
+				var text_lname = $('input[name="lastname"]').val();
+				var text_email = $('input[name="email"]').val();
+				var text_pass = $('input[name="pass"]').val();
+        if (textarea_value != '' && text_value != '' && text_name != '' && text_lname != '' && text_email != '' && text_pass != '') {
+            $('button[type="button"]').attr('disabled', false);
+        } else {
+            $('button[type="button"]').attr('disabled', true);
+        }
+    });
+});
+
+
 $(".next").click(function(){
 	if(animating) return false;
 	animating = true;
@@ -79,3 +98,8 @@ $(".previous").click(function(){
 $(".submit").click(function(){
 	return false;
 })
+
+function submitted() {
+    document.getElementById("everything").style.display = "none";
+    document.getElementById("clap").style.display = "inherit";
+}
