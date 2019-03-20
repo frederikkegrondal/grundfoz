@@ -103,3 +103,12 @@ function submitted() {
     document.getElementById("everything").style.display = "none";
     document.getElementById("clap").style.display = "inherit";
 }
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
