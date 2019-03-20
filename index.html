@@ -20,7 +20,7 @@
     </ul>
     <!-- fieldsets -->
     <fieldset id="one">
-      <img src="images/whatsin2.png" class="img">
+      <img src="images/whatsin2.png" class="img" alt="whatsin">
 
       <div id="fakemargin"></div>
 
@@ -32,7 +32,7 @@
 
       <input type="text" name="email" placeholder="Email"/>
 
-      <select class="country" type="Country" name="country" placeholder="Country">
+      <select class="country" name="country">
         <option value="" disabled selected hidden>Country / region</option>
         <option value="AF">Afghanistan</option>
         <option value="AX">Åland Islands</option>
@@ -295,39 +295,36 @@
 
     <fieldset class="two">
 
-      <img src="images/improve2.png" class="img">
-
-      <h3 class="fs-subtitle"></h3>
+      <img src="images/improve2.png" class="img" alt="improve">
 
       <input type="text" id="company" name="company" placeholder="Company"/>
 
-      <select type="text" name="jobrole">
+      <select name="jobrole">
         <option value="" disabled selected hidden>Job role</option>
-        <option value="engineer">Engineer</option>
-        <option value="AL">Albania</option>
-        <option value="DZ">Algeria</option>
-        <option value="AS">American Samoa</option>
-        <option value="AD">Andorra</option>
-        <option value="AO">Angola</option>
-        <option value="AI">Anguilla</option>
-        <option value="AQ">Antarctica</option>
-        <option value="AG">Antigua and Barbuda</option>
+        <option value="Engineer">Engineer</option>
+        <option value="Installer">Installer</option>
+        <option value="Facility Manager">Facility Manager</option>
+        <option value="Distributor">Distributor</option>
+        <option value="Service Provider">Service Provider</option>
+        <option value="Opration Manager">Opration Manager</option>
+        <option value="System Builder">System Builder</option>
+        <option value="Homeowner">Homeowner</option>
+        <option value="Contractor">Contractor</option>
+        <option value="Technical Director">Technical Director</option>
+        <option value="Other">Other</option>
       </select>
 
-      <select type="text" name="interest">
+      <select name="interest">
         <option value="" disabled selected hidden>Area of interest (multiple choice)</option>
-        <option value="engineer">Engineer</option>
-        <option value="AL">Albania</option>
-        <option value="DZ">Algeria</option>
-        <option value="AS">American Samoa</option>
-        <option value="AD">Andorra</option>
-        <option value="AO">Angola</option>
-        <option value="AI">Anguilla</option>
-        <option value="AQ">Antarctica</option>
-        <option value="AG">Antigua and Barbuda</option>
+        <option value="Family homes">Family homes</option>
+        <option value="Commercial Building">Commercial Building</option>
+        <option value="Industrial processes">Industrial processes</option>
+        <option value="Industrial utilities">Industrial utilities</option>
+        <option value="Water Supply">Water Supply</option>
+        <option value="Wastewater">Wastewater</option>
       </select>
 
-      <button name="previous" class="previous action-button" value="Previous" class="previous">Previous</button>
+      <button name="previous" class="previous action-button" value="Previous">Previous</button>
 
       <button type="button" class="create action-button" value="Create" id="submitting" onclick="submitted()">Create</button>
 
